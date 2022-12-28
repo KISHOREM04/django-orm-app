@@ -24,11 +24,7 @@ models.py program
 from django.db import models
 from django.contrib import admin
 
-class Student (models.Model):
-    referencenumber=models.CharField(max_length=20,help_text="reference number")
-    name=models.CharField(max_length=100)
-    age=models.IntegerField()
-    email=models.EmailField()
+
 
 class Employee (models.Model):
     emp_id=models.CharField(primary_key=True,max_length=4,help_text="Employee ID")
@@ -37,18 +33,17 @@ class Employee (models.Model):
     salary=models.IntegerField()
     email=models.EmailField()    
 
-class StudentAdmin(admin.ModelAdmin):
-    list_display=('referencenumber','name','age','email')
+
 class EmployeeAdmin(admin.ModelAdmin):
     list_display=('emp_id','ename','post','salary','email')    
 ```
 admin.py program
 ```
 from django.contrib import admin
-from.models import Student,StudentAdmin,Employee,EmployeeAdmin
+from.models import Employee,EmployeeAdmin
 
 
-admin.site.register(Student,StudentAdmin)
+
 admin.site.register(Employee,EmployeeAdmin)
 ```
 
@@ -57,7 +52,10 @@ admin.site.register(Employee,EmployeeAdmin)
 
 ## OUTPUT
 
-Include the screenshot of your admin page.
+Employee table with 10 users is displayed
+### OUTPUT
+Primary key is used
 
 
 ## RESULT
+ Thus we developed a Django application to store and retrieve data from a database using Object Relational Mapping(ORM).
