@@ -51,8 +51,8 @@ admin.site.register(Employee,EmployeeAdmin)
 
 
 ## OUTPUT
+![Django](./images/djangoORM.png)
 
-Employee table with 10 users is displayed
 ### OUTPUT
 Primary key is used
 
