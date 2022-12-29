@@ -51,10 +51,12 @@ admin.site.register(Employee,EmployeeAdmin)
 
 
 ## OUTPUT
+### Django
 ![Django](./images/djangoORM.png)
 
-### OUTPUT
-Primary key is used
+### Primary key
+![primarykey](./images/primarykey.png)
+
 
 
 ## RESULT
